@@ -3,6 +3,86 @@
   <component name="ChangeListManager">
     <list default="true" id="d229bc12-1bc7-40e1-9613-6ef810445c94" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/api-impl/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api-impl/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api-impl/target/product-factory-api-impl-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api/target/product-factory-api-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/biz/target/product-factory-biz-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/yangle/service/common/annotations/DataSouceRouting.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/yangle/service/common/enums/CodeDescEnum.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/yangle/service/common/enums/dao/DeleteFlagEnum.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/yangle/service/common/utils/DataSourceUtil.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/mybatis-config.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/target/product-factory-common-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/yangle/service/dao/TypeHandle.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/yangle/service/dao/entity/BaseEntity.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/yangle/service/dao/entity/ProductUser.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/yangle/service/dao/mapper/ProductUserMapper.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/yangle/service/dao/mapper/ProductUserMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dao/target/product-factory-dao-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/schedule/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/schedule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/schedule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/schedule/target/product-factory-schedule-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/service/target/product-factory-service-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory.war" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/applicationContext.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/jdbc.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/aspectjweaver-1.8.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/commons-dbcp2-2.1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/junit-4.11.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/mybatis-3.4.5.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/mysql-connector-java-6.0.6.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/product-factory-api-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/product-factory-api-impl-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/product-factory-biz-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/product-factory-common-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/product-factory-dao-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/product-factory-schedule-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/product-factory-service-1.0.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-aop-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-aspects-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-beans-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-context-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-context-support-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-core-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-expression-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-jdbc-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-test-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-tx-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-web-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/lib/spring-webmvc-4.0.6.RELEASE.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/product-factory/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/test-classes/applicationContext.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/test-classes/com/yangle/web/test/BaseTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/test-classes/com/yangle/web/test/MapperTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/test-classes/jdbc.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/web/target/war/work/webapp-cache.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,7 +105,18 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -918,7 +1009,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536848921467</updated>
       <workItem from="1536848926567" duration="5530000" />
-      <workItem from="1537174697602" duration="23186000" />
+      <workItem from="1537174697602" duration="23483000" />
     </task>
     <task id="LOCAL-00001" summary="git">
       <created>1537240759328</created>
@@ -963,7 +1054,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28716000" />
+    <option name="totallyTimeSpent" value="29013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="713" extended-state="0" />
@@ -980,7 +1071,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.684466" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3206785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1413,14 +1504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/src/main/java/com/yangle/service/dao/TypeHandle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1441,6 +1524,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
