@@ -1,0 +1,4 @@
+com/yangle/service/dao/TypeHandle.class
+com/yangle/service/dao/entity/ProductUser.class
+com/yangle/service/dao/mapper/ProductUserMapper.class
+com/yangle/service/dao/entity/BaseEntity.class

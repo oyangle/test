@@ -1,0 +1,42 @@
+<webapp-structure>
+  <registeredFiles>
+    <entry>
+      <string>currentBuild</string>
+      <path-set>
+        <pathsSet class="linked-hash-set">
+          <string>WEB-INF/applicationContext.xml</string>
+          <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/jdbc.properties</string>
+          <string>WEB-INF/lib/product-factory-api-1.0.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/product-factory-api-impl-1.0.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/product-factory-biz-1.0.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/product-factory-common-1.0.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/product-factory-dao-1.0.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/product-factory-service-1.0.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/product-factory-schedule-1.0.0-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/mybatis-3.4.5.jar</string>
+          <string>WEB-INF/lib/mysql-connector-java-6.0.6.jar</string>
+          <string>WEB-INF/lib/junit-4.11.jar</string>
+          <string>WEB-INF/lib/hamcrest-core-1.3.jar</string>
+          <string>WEB-INF/lib/commons-dbcp2-2.1.1.jar</string>
+          <string>WEB-INF/lib/commons-logging-1.2.jar</string>
+          <string>WEB-INF/lib/commons-pool2-2.4.2.jar</string>
+          <string>WEB-INF/lib/spring-aop-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/aopalliance-1.0.jar</string>
+          <string>WEB-INF/lib/spring-aspects-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/aspectjweaver-1.8.1.jar</string>
+          <string>WEB-INF/lib/spring-beans-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-context-support-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-context-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-core-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-expression-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-jdbc-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-test-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-tx-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-web-4.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-webmvc-4.0.6.RELEASE.jar</string>
+        </pathsSet>
+      </path-set>
+    </entry>
+  </registeredFiles>
+</webapp-structure>
