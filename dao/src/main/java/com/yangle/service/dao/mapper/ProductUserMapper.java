@@ -1,6 +1,7 @@
 package com.yangle.service.dao.mapper;
 
 import com.yangle.service.dao.entity.ProductUser;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -9,6 +10,7 @@ import org.apache.ibatis.annotations.Param;
  * @author: yishao
  * @create: 2018-09-17 17:57
  **/
+@Mapper
 public interface ProductUserMapper {
 
     void insert(ProductUser user);

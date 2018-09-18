@@ -4,8 +4,10 @@ import com.alibaba.fastjson.JSONObject;
 import com.yangle.service.common.utils.DataSourceUtil;
 import com.yangle.service.dao.entity.ProductUser;
 import com.yangle.service.dao.mapper.ProductUserMapper;
+import com.yangle.service.service.ProductUserService;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * programname: product_factory
@@ -18,6 +20,8 @@ import org.junit.Test;
  **/
 public class MapperTest extends BaseTest{
 
+    @Autowired
+    private ProductUserService productUserService;
 
     @Test
     public void testInsert(){
@@ -42,6 +46,14 @@ public class MapperTest extends BaseTest{
         ProductUser productUser = mapper.selectById(2L);
         sqlSession.close();
         System.out.println(JSONObject.toJSONString(productUser));
+    }
+
+    @Test
+    public void testAop(){
+
+        ProductUser productUser = productUserService.queryById(2L);
+        System.out.println(JSONObject.toJSONString(productUser));
+
     }
 
 }

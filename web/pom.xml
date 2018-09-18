@@ -16,7 +16,7 @@
     <properties>
         <spring.version>4.0.6.RELEASE</spring.version>
         <maven.deploy.skip>true</maven.deploy.skip>
-        <maven.install.skip>true</maven.install.skip>
+        <maven.install.skip>false</maven.install.skip>
         <project.webwar.name>product-factory</project.webwar.name>
     </properties>
 

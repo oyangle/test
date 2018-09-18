@@ -1,4 +1,4 @@
-package com.yangle.service.dao;
+package com.yangle.service.dao.typehandle;
 
 import com.yangle.service.common.enums.CodeDescEnum;
 import com.yangle.service.common.enums.dao.DeleteFlagEnum;
