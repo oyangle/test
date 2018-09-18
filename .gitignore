@@ -1,12 +1,11 @@
-*.costa.properties
-mogu-global
+
 /.idea/
+/.idea/workspace.xml
 .DS_Store
 *.swp
 report/
 .buildpath
 .project
-RAPTOR.CLIENT.sentrycache.data
 .settings
 .classpath
 target/
