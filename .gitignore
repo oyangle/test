@@ -15,3 +15,6 @@ target/
 bin/
 *.dat
 snapshot/
+
+web/src/main/webapp/WEB-INF/*.properties
+web/src/test/resources/*.properties
