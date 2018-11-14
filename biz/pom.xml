@@ -9,7 +9,24 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <maven.deploy.skip>true</maven.deploy.skip>
+        <maven.install.skip>false</maven.install.skip>
+    </properties>
+
     <artifactId>product-factory-biz</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.yangle.service</groupId>
+            <artifactId>product-factory-common</artifactId>
+            <version>${product.factory.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yangle.service</groupId>
+            <artifactId>product-factory-service</artifactId>
+            <version>${product.factory.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
