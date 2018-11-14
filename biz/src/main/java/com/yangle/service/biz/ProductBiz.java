@@ -10,4 +10,6 @@ public interface ProductBiz {
 
     void addNewProduct();
 
+    void addNewProductRollBack();
+
 }

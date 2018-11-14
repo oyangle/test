@@ -37,6 +37,15 @@ public class BaseTestAction {
         return "SUCCESS";
     }
 
+    @RequestMapping("/rollback")
+    @ResponseBody
+    public String rollback(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap){
+        LOGGER.info("===================insert");
+        productBiz.addNewProductRollBack();
+
+        return "SUCCESS";
+    }
+
     @RequestMapping("/insert")
     @ResponseBody
     public String insert(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap){

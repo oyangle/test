@@ -31,11 +31,19 @@ public class ProductBizImpl implements ProductBiz{
         user.setUserName("李四");
 
         productUserService.insert(user);
-        throwE();
-
     }
 
     public void throwE(){
         throw new RuntimeException("出异常啦");
+    }
+
+    @Transactional
+    public void addNewProductRollBack() {
+        ProductUser user = new ProductUser();
+        user.setAge(10);
+        user.setUserName("李四");
+
+        productUserService.insert(user);
+        throwE();
     }
 }
