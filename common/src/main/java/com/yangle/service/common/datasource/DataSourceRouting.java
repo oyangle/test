@@ -1,4 +1,4 @@
-package com.yangle.service.common.annotations;
+package com.yangle.service.common.datasource;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -14,8 +14,11 @@ import java.lang.annotation.Target;
  * <p>
  * created: 2018-09-17 21:35
  **/
-@Target(ElementType.TYPE)
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface DataSouceRouting {
+public @interface DataSourceRouting {
+
+    //默认使用主库
+    DataSourceTypeEnum value() default DataSourceTypeEnum.MASTER;
 
 }

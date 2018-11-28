@@ -9,18 +9,55 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
 
-    <context:property-placeholder location="classpath:testconfig/*.properties"/>
+    <context:property-placeholder location="/testconfig/*.properties"/>
     <context:component-scan base-package="com.yangle.service"/>
 
-    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+    <!-- base dataSource -->
+    <bean name="baseDataSource" class="com.alibaba.druid.pool.DruidDataSource"
+          destroy-method="close">
+        <property name="initialSize" value="5" />
+        <property name="maxActive" value="100" />
+        <property name="minIdle" value="10" />
+        <property name="maxWait" value="60000" />
+        <property name="validationQuery" value="SELECT 'x'" />
+        <property name="testOnBorrow" value="true" />
+        <property name="testOnReturn" value="true" />
+        <property name="testWhileIdle" value="true" />
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+        <property name="removeAbandoned" value="true" />
+        <property name="removeAbandonedTimeout" value="1800" />
+        <property name="logAbandoned" value="true" />
+        <property name="filters" value="mergeStat" />
+    </bean>
+
+
+    <bean id="master-dataSource" parent="baseDataSource" init-method="init">
         <property name="driverClassName" value="${db.driver}" />
         <property name="url" value="${db.url}" />
         <property name="username" value="${db.username}" />
         <property name="password" value="${db.password}" />
     </bean>
 
+    <bean id="slave-dataSource" parent="baseDataSource" init-method="init">
+        <property name="driverClassName" value="${db.driver}" />
+        <property name="url" value="${db.url.slave}" />
+        <property name="username" value="${db.username}" />
+        <property name="password" value="${db.password}" />
+    </bean>
+
+    <!-- 数据源选择 -->
+    <bean id="dynamicDataSource" class="com.yangle.service.common.datasource.DynamicDataSource">
+        <property name="master" ref="master-dataSource"/>
+        <property name="slaves">
+            <list>
+                <ref bean="slave-dataSource"/>
+            </list>
+        </property>
+    </bean>
+
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource"/>
+        <property name="dataSource" ref="dynamicDataSource"/>
         <property name="mapperLocations" value="classpath:com/yangle/service/dao/mapper/*.xml"/>
         <property name="typeHandlersPackage" value="com.yangle.service.dao.typehandle"/>
     </bean>
@@ -32,16 +69,18 @@
 
     <!-- JDBC模板 -->
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource" ref="dataSource"/>
+        <property name="dataSource" ref="dynamicDataSource"/>
     </bean>
 
     <!--事物管理器-->
     <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"/>
+        <property name="nestedTransactionAllowed" value="true"/>
+        <property name="dataSource" ref="dynamicDataSource"/>
     </bean>
 
     <!--指定使用注解方式实现事物-->
     <tx:annotation-driven transaction-manager="txManager"/>
 
-    <import resource="classpath:mvc-servlet.xml"/>
+    <import resource="mvc-servlet.xml"/>
+
 </beans>

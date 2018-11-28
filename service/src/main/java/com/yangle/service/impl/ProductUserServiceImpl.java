@@ -1,5 +1,7 @@
 package com.yangle.service.impl;
 
+import com.yangle.service.common.datasource.DataSourceRouting;
+import com.yangle.service.common.datasource.DataSourceTypeEnum;
 import com.yangle.service.dao.entity.ProductUser;
 import com.yangle.service.dao.mapper.ProductUserMapper;
 import com.yangle.service.service.ProductUserService;
@@ -22,6 +24,7 @@ public class ProductUserServiceImpl implements ProductUserService{
     @Resource
     private ProductUserMapper productUserMapper;
 
+    @DataSourceRouting(DataSourceTypeEnum.SLAVE)
     public void insert(ProductUser user) {
         productUserMapper.insert(user);
     }
