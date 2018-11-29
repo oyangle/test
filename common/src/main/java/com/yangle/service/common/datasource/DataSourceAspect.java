@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -22,7 +23,7 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 @Aspect
-@Order(0)
+@Order(Ordered.LOWEST_PRECEDENCE-1)
 @ComponentScan//组件自动扫描
 @EnableAspectJAutoProxy//spring自动切换JDK动态代理和CGLIB
 public class DataSourceAspect {
