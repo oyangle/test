@@ -82,5 +82,6 @@
     <tx:annotation-driven transaction-manager="txManager"/>
 
     <import resource="mvc-servlet.xml"/>
+    <import resource="job.xml"/>
 
 </beans>

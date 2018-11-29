@@ -9,7 +9,7 @@ report/
 .settings
 .classpath
 target/
-*.iml
+*/*.iml
 *.data
 *.log
 bin/
@@ -18,3 +18,4 @@ snapshot/
 
 web/src/main/webapp/WEB-INF/*.properties
 web/src/test/resources/*.properties
+

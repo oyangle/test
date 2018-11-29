@@ -23,7 +23,6 @@ public class ProductBizImpl implements ProductBiz{
     @Resource
     private ProductUserService productUserService;
 
-    @Transactional
     public void addNewProduct() {
 
         ProductUser user = new ProductUser();
