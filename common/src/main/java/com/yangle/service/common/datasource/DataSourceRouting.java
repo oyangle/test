@@ -1,5 +1,7 @@
 package com.yangle.service.common.datasource;
 
+import org.springframework.core.annotation.Order;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -15,6 +17,7 @@ import java.lang.annotation.Target;
  * created: 2018-09-17 21:35
  **/
 @Target(ElementType.METHOD)
+@Order(0)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface DataSourceRouting {
 
