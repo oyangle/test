@@ -79,7 +79,7 @@
     </bean>
 
     <!--指定使用注解方式实现事物-->
-    <tx:annotation-driven transaction-manager="txManager"/>
+    <tx:annotation-driven transaction-manager="txManager" order="2"/>
 
     <import resource="mvc-servlet.xml"/>
     <import resource="job.xml"/>
