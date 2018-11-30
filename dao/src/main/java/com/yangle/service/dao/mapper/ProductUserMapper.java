@@ -4,6 +4,8 @@ import com.yangle.service.dao.entity.ProductUser;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 /**
  * @program: product_factory
  * @description: 用户表
@@ -16,5 +18,7 @@ public interface ProductUserMapper {
     void insert(ProductUser user);
 
     ProductUser selectById(@Param("id")Long id);
+
+    List<ProductUser> selectByName(@Param("userName")String userName);
 
 }

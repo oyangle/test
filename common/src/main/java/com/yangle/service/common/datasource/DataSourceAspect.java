@@ -21,7 +21,6 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 @Aspect
-//@Order(0)
 @ComponentScan//组件自动扫描
 @EnableAspectJAutoProxy//spring自动切换JDK动态代理和CGLIB
 public class DataSourceAspect {

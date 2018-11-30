@@ -29,5 +29,12 @@
         where id = #{id}
         limit 1
     </select>
+    <select id="selectByName"  resultType="com.yangle.service.dao.entity.ProductUser">
+        SELECT
+        <include refid="allField"/>
+        FROM ProductUser
+        where userName = #{userName}
+        limit 100
+    </select>
 
 </mapper>
