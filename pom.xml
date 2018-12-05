@@ -177,5 +177,19 @@
 
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <build>
+                <filters>
+                    <filter>../dev_config.properties</filter>
+                </filters>
+            </build>
+            <properties>
+                <CATALINA_APPLOG>${CATALINA_HOME}/logs/</CATALINA_APPLOG>
+            </properties>
+        </profile>
+    </profiles>
+
 
 </project>
