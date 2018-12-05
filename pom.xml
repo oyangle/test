@@ -173,23 +173,6 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
-
-
     </dependencies>
-
-    <profiles>
-        <profile>
-            <id>dev</id>
-            <build>
-                <filters>
-                    <filter>../*.properties</filter>
-                </filters>
-            </build>
-            <properties>
-                <CATALINA_APPLOG>${CATALINA_HOME}/logs/</CATALINA_APPLOG>
-            </properties>
-        </profile>
-    </profiles>
-
 
 </project>
