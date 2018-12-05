@@ -23,7 +23,7 @@ public class HelloWorldJob implements Job{
 
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
 
-//        logger.info("this is a test job!");
+        logger.info("this is a test job!");
 
     }
 }

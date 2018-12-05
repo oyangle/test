@@ -24,7 +24,7 @@
             <property name="name" value="hw_trigger"/>
             <property name="group" value="hw_trigger_group"/>
             <property name="jobDetail" ref="hwJob"/>
-            <property name="cronExpression" value="0/1 * * * * ?"/>
+            <property name="cronExpression" value="${pf.hwJob}"/>
         </bean>
 
         <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
