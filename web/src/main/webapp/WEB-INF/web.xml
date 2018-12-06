@@ -3,14 +3,15 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
     http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
+    <context-param>
+        <param-name>logbackConfigLocation</param-name>
+        <param-value>WEB-INF/classes/logback.xml</param-value>
+    </context-param>
     <display-name>product-factory web</display-name>
     <context-param>
         <param-name>webAppRootKey</param-name>
-        <param-value>webApp.root</param-value>
+        <param-value>pf.root</param-value>
     </context-param>
-    <listener>
-        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
-    </listener>
 
     <!--编码过滤器-->
     <filter>
@@ -44,6 +45,10 @@
     </servlet-mapping>
 
     <listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
+    <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+
 </web-app>

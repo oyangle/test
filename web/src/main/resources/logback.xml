@@ -1,5 +1,5 @@
 <configuration debug="false" scan="true" scanPeriod="30 seconds">
-    <property name="FILE_PATTERN" value="%5p - %d{yyyy-MM-dd HH:mm:ss.SSS} - [%thread] - [%c{0}:%line] - %TraceId - %msg%n"/>
+    <property name="FILE_PATTERN" value="%5p - %d{yyyy-MM-dd HH:mm:ss.SSS} - [%thread] - [%c{0}:%line] - %msg%n"/>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -10,9 +10,9 @@
     <appender name="debugLog"
         class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!--<Encoding>UTF-8</Encoding>-->
-        <file>${webApp.root}/logs/pf_debug.log</file>
+        <file>${pf.root}/logs/pf_debug.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${webApp.root}/logs/pf_debug_%d{yyyy_MM_dd}-%i.log</fileNamePattern>
+            <fileNamePattern>${pf.root}/logs/%d{yyyy-MM-dd}/pf_debug_%d{yyyy_MM_dd}-%i.log</fileNamePattern>
             <MaxHistory>10</MaxHistory>
             <timeBasedFileNamingAndTriggeringPolicy
                 class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
@@ -35,15 +35,15 @@
     <appender name="infoLog"
         class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!--<Encoding>UTF-8</Encoding>-->
-        <file>${webApp.root}/logs/pf_info.log</file>
+        <file>${pf.root}/logs/pf_info.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志文件输出的文件名 -->
-            <FileNamePattern>${webApp.root}/logs/pf_info_%d{yyyy_MM_dd}-%i.log</FileNamePattern>
-            <MaxHistory>10</MaxHistory>
+            <FileNamePattern>${pf.root}/logs/pf_info_%d{yyyy_MM_dd}-%i.log</FileNamePattern>
+            <MaxHistory>3</MaxHistory>
             <timeBasedFileNamingAndTriggeringPolicy
                 class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- or whenever the file size reaches 500MB -->
-                <maxFileSize>100MB</maxFileSize>
+                <maxFileSize>3KB</maxFileSize>
             </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
 
@@ -60,10 +60,10 @@
     <appender name="errorLog"
         class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!--<Encoding>UTF-8</Encoding>-->
-        <file>${webApp.root}/logs/pf_error.log</file>
+        <file>${pf.root}/logs/pf_error.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${webApp.root}/logs/pf_error_%d{yyyy_MM_dd}-%i.log</fileNamePattern>
-            <MaxHistory>10</MaxHistory>
+            <fileNamePattern>${pf.root}/logs/pf_error_%d{yyyy_MM_dd}-%i.log</fileNamePattern>
+            <MaxHistory>3</MaxHistory>
             <timeBasedFileNamingAndTriggeringPolicy
                 class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
                 <!-- or whenever the file size reaches 500MB -->
