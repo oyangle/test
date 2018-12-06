@@ -23,9 +23,6 @@ public class HelloWorldJob implements Job{
 
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
 
-        logger.info("this is a info!");
-        logger.error("this is a error");
-
         logger.info("=======this webroot.app "+System.getProperty("pf.root"));
 
     }
