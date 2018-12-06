@@ -6,12 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d229bc12-1bc7-40e1-9613-6ef810445c94" name="Default" comment="干掉日志配置文件">
+    <list default="true" id="d229bc12-1bc7-40e1-9613-6ef810445c94" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/schedule/src/main/java/com/yangle/service/schedule/HelloWorldJob.java" afterPath="$PROJECT_DIR$/schedule/src/main/java/com/yangle/service/schedule/HelloWorldJob.java" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/web/src/main/resources/jdbc.properties" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/log4j.properties" afterPath="" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/web/src/main/resources/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/schedule.properties" afterPath="$PROJECT_DIR$/web/src/main/resources/schedule.properties" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,21 +66,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloWorldJob.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HelloWorldJob.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schedule/src/main/java/com/yangle/service/schedule/HelloWorldJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="28" column="78" lean-forward="false" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
+            <state relative-caret-position="432">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/resources/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="774">
+              <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -100,8 +99,8 @@
       <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="88" />
+            <state relative-caret-position="234">
+              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -196,8 +195,8 @@
         <option value="$PROJECT_DIR$/schedule/src/main/java/com/yangle/service/schedule/HelloWorldJob.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/web/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/logback.xml" />
       </list>
     </option>
   </component>
@@ -1183,7 +1182,6 @@
       </RunnerSettings>
     </configuration>
     <configuration name="product" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.28" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="web:war">
@@ -1197,9 +1195,9 @@
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="true" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="true" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="53602" />
@@ -1264,10 +1262,10 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.product" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MapperTest.testQuery" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BaseTest.test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MapperTest.testTx" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MainTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MainTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MapperTest.testQuery" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BaseTest.test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MapperTest.testTx" />
       <item index="5" class="java.lang.String" itemvalue="JUnit.MapperTest.testInsert1" />
     </list>
     <recent_temporary>
@@ -1302,7 +1300,7 @@
       <workItem from="1543565379147" duration="978000" />
       <workItem from="1543996552432" duration="5430000" />
       <workItem from="1544003459099" duration="5900000" />
-      <workItem from="1544063593928" duration="5495000" />
+      <workItem from="1544063593928" duration="6407000" />
     </task>
     <task id="LOCAL-00001" summary="git">
       <created>1537240759328</created>
@@ -1500,7 +1498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544011699341</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="日志文件">
+      <created>1544070228792</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1544070228793</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1536,7 +1541,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93673000" />
+    <option name="totallyTimeSpent" value="94585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-376" y="-1056" width="1791" height="993" extended-state="0" />
@@ -1558,7 +1563,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5144766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.513363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12694877" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1589,7 +1594,8 @@
     <MESSAGE value="调度配置" />
     <MESSAGE value="注解优先级配置" />
     <MESSAGE value="干掉日志配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="干掉日志配置文件" />
+    <MESSAGE value="日志文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="日志文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1853,14 +1859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="62" column="99" lean-forward="true" selection-start-line="62" selection-start-column="99" selection-end-line="62" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
@@ -1903,6 +1901,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/schedule/src/main/java/com/yangle/service/schedule/HelloWorldJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/schedule.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -1911,26 +1917,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="88" />
+        <state relative-caret-position="234">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schedule/src/main/java/com/yangle/service/schedule/HelloWorldJob.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="28" column="78" lean-forward="false" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
+        <state relative-caret-position="762">
+          <caret line="62" column="99" lean-forward="true" selection-start-line="62" selection-start-column="99" selection-end-line="62" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
           <folding />
         </state>
       </provider>
