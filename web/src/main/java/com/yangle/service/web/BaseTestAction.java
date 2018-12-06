@@ -1,6 +1,7 @@
 package com.yangle.service.web;
 
 import com.yangle.service.biz.ProductBiz;
+import com.yangle.service.biz.redis.RedisService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -30,6 +31,9 @@ public class BaseTestAction {
     @Resource
     private ProductBiz productBiz;
 
+    @Resource
+    private RedisService redisService;
+
     @RequestMapping("/status")
     @ResponseBody
     public String status(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap){
@@ -54,5 +58,33 @@ public class BaseTestAction {
 
         return "SUCCESS";
     }
+
+    @RequestMapping("/redis/add")
+    @ResponseBody
+    public String redisAdd(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap){
+
+        String key = request.getParameter("key");
+        String value = request.getParameter("value");
+        LOGGER.info("=================redis==add,key={},value={}",key,value);
+
+        redisService.setV(key,value,0);
+
+        return "SUCCESS";
+    }
+    @RequestMapping("/redis/get")
+    @ResponseBody
+    public String redisGet(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap){
+        String key = request.getParameter("key");
+        LOGGER.info("=================redis==add,key={}",key);
+
+        Object v = redisService.getV(key, 0);
+
+        if(v!=null){
+            return (String)v;
+        }
+
+        return "查无数据";
+    }
+
 
 }

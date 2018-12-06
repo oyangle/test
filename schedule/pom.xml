@@ -11,5 +11,13 @@
 
     <artifactId>product-factory-schedule</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.yangle.service</groupId>
+            <artifactId>product-factory-biz</artifactId>
+            <version>${product.factory.version}</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
