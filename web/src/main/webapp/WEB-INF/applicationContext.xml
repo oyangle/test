@@ -101,5 +101,7 @@
 
     <import resource="mvc-servlet.xml"/>
     <import resource="job.xml"/>
+    <!--<import resource="provider.xml"/>-->
+    <import resource="consumer.xml"/>
 
 </beans>

@@ -11,5 +11,12 @@
 
     <artifactId>product-factory-api-impl</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.yangle.service</groupId>
+            <artifactId>product-factory-api</artifactId>
+            <version>${product.factory.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

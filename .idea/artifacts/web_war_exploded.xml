@@ -28,6 +28,16 @@
           <element id="archive" name="product-factory-schedule-1.0.0-SNAPSHOT.jar">
             <element id="module-output" name="schedule" />
           </element>
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/provider/service/provider-test-api/1.0.0-SNAPSHOT/provider-test-api-1.0.0-20181210.065010-1.jar" output-file-name="provider-test-api-1.0.0-SNAPSHOT.jar" />
+          <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.4.9" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.6.1" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.16" />
+          <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
+          <element id="library" level="project" name="Maven: io.netty:netty:3.10.5.Final" />
+          <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.8.4" />
+          <element id="library" level="project" name="Maven: com.github.sgroschupf:zkclient:0.1" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.20.0-GA" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.4.5" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.3.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.11" />
@@ -36,7 +46,6 @@
           <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.29" />
           <element id="library" level="project" name="Maven: org.slf4j:log4j-over-slf4j:1.7.13" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.13" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-simple:1.6.6" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.3" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.1.3" />

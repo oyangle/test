@@ -1,5 +1,6 @@
 package com.yangle.service.web;
 
+import com.provider.service.api.FirstDemoApi;
 import com.yangle.service.biz.ProductBiz;
 import com.yangle.service.biz.redis.RedisService;
 import org.slf4j.Logger;
@@ -34,11 +35,20 @@ public class BaseTestAction {
     @Resource
     private RedisService redisService;
 
+    @Resource
+    private FirstDemoApi firstDemoApi;
+
     @RequestMapping("/status")
     @ResponseBody
     public String status(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap){
-        LOGGER.info("===================ddddd");
+        LOGGER.info("===================status");
         return "SUCCESS";
+    }
+    @RequestMapping("/sayhello")
+    @ResponseBody
+    public String sayhello(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap){
+        LOGGER.info("===================sayhello");
+        return firstDemoApi.queryOK();
     }
 
     @RequestMapping("/rollback")
