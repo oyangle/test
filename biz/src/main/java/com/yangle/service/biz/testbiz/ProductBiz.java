@@ -1,4 +1,4 @@
-package com.yangle.service.biz;
+package com.yangle.service.biz.testbiz;
 
 /**
  * @program: product_factory

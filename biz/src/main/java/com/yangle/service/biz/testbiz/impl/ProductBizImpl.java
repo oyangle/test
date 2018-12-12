@@ -1,6 +1,6 @@
-package com.yangle.service.biz.impl;
+package com.yangle.service.biz.testbiz.impl;
 
-import com.yangle.service.biz.ProductBiz;
+import com.yangle.service.biz.testbiz.ProductBiz;
 import com.yangle.service.dao.entity.ProductUser;
 import com.yangle.service.service.ProductUserService;
 import org.slf4j.Logger;

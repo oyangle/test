@@ -1,7 +1,7 @@
 package com.yangle.web.test;
 
 import com.alibaba.fastjson.JSONObject;
-import com.yangle.service.biz.ProductBiz;
+import com.yangle.service.biz.testbiz.ProductBiz;
 import com.yangle.service.dao.entity.ProductUser;
 import com.yangle.service.service.ProductUserService;
 import org.junit.Test;

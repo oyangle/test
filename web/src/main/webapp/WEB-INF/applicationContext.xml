@@ -2,15 +2,26 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/tx
-        http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+        http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
 
     <context:property-placeholder location="classpath:*.properties"/>
     <context:component-scan base-package="com.yangle.service"/>
+
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes" value = "text/html;charset=UTF-8" />
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 
     <!-- base dataSource -->
     <bean name="baseDataSource" class="com.alibaba.druid.pool.DruidDataSource"
@@ -19,18 +30,7 @@
         <property name="maxActive" value="100" />
         <property name="minIdle" value="10" />
         <property name="maxWait" value="60000" />
-        <property name="validationQuery" value="SELECT 'x'" />
-        <property name="testOnBorrow" value="true" />
-        <property name="testOnReturn" value="true" />
-        <property name="testWhileIdle" value="true" />
-        <property name="timeBetweenEvictionRunsMillis" value="60000" />
-        <property name="minEvictableIdleTimeMillis" value="300000" />
-        <property name="removeAbandoned" value="true" />
-        <property name="removeAbandonedTimeout" value="1800" />
-        <property name="logAbandoned" value="true" />
-        <property name="filters" value="mergeStat" />
     </bean>
-
 
     <bean id="master-dataSource" parent="baseDataSource" init-method="init">
         <property name="driverClassName" value="${db.driver}" />
@@ -101,7 +101,7 @@
 
     <import resource="mvc-servlet.xml"/>
     <import resource="job.xml"/>
-    <!--<import resource="provider.xml"/>-->
-    <import resource="consumer.xml"/>
+    <import resource="dubbo-consumer.xml"/>
+    <import resource="mq-producer.xml"/>
 
 </beans>

@@ -6,16 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d229bc12-1bc7-40e1-9613-6ef810445c94" name="Default" comment="日志文件">
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/src/main/resources/log4j.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/consumer.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/src/test/resources/testconfig/log4j.properties" />
+    <list default="true" id="d229bc12-1bc7-40e1-9613-6ef810445c94" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/activemq/ProducerService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/activemq/impl/ProducerServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mq-producer.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/api-impl/api-impl.iml" afterPath="$PROJECT_DIR$/api-impl/api-impl.iml" />
-      <change beforePath="$PROJECT_DIR$/api-impl/pom.xml" afterPath="$PROJECT_DIR$/api-impl/pom.xml" />
       <change beforePath="$PROJECT_DIR$/api/api.iml" afterPath="$PROJECT_DIR$/api/api.iml" />
       <change beforePath="$PROJECT_DIR$/biz/biz.iml" afterPath="$PROJECT_DIR$/biz/biz.iml" />
+      <change beforePath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/ProductBiz.java" afterPath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/testbiz/ProductBiz.java" />
+      <change beforePath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/impl/ProductBizImpl.java" afterPath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/testbiz/impl/ProductBizImpl.java" />
+      <change beforePath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/RedisServiceImpl.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
       <change beforePath="$PROJECT_DIR$/dao/dao.iml" afterPath="$PROJECT_DIR$/dao/dao.iml" />
       <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
@@ -24,9 +26,10 @@
       <change beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/BaseTestAction.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/BaseTestAction.java" />
       <change beforePath="$PROJECT_DIR$/web/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/web/src/main/resources/jdbc.properties" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/web/src/main/resources/log4j.properties" />
       <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mvc-servlet.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mvc-servlet.xml" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/consumer.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/dubbo-consumer.xml" />
+      <change beforePath="$PROJECT_DIR$/web/src/test/java/com/yangle/web/test/MapperTest.java" afterPath="$PROJECT_DIR$/web/src/test/java/com/yangle/web/test/MapperTest.java" />
       <change beforePath="$PROJECT_DIR$/web/web.iml" afterPath="$PROJECT_DIR$/web/web.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -63,12 +66,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/applicationContext.xml">
+      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
+            <state relative-caret-position="234">
+              <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mq-producer.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mq-producer.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="12" column="66" lean-forward="false" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProducerServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/activemq/impl/ProducerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+              <folding>
+                <element signature="e#849#1089#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageCreator.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/4.0.6.RELEASE/spring-jms-4.0.6.RELEASE.jar!/org/springframework/jms/core/MessageCreator.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding>
+                <marker date="1544585332875" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1544585332875" expanded="false" signature="152:227" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,19 +114,158 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+            <state relative-caret-position="220">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestApiImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api-impl/src/main/java/com/yangle/service/aip/impl/TestApiImpl.java">
+      <file leaf-file-name="JmsTemplate.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/4.0.6.RELEASE/spring-jms-4.0.6.RELEASE.jar!/org/springframework/jms/core/JmsTemplate.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="189">
+              <caret line="288" column="16" lean-forward="false" selection-start-line="288" selection-start-column="16" selection-end-line="288" selection-end-column="16" />
+              <folding>
+                <marker date="1544585332875" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1544585332875" expanded="false" signature="152:1211" ph="..." />
+                <marker date="1544585332875" expanded="true" signature="1986:2440" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="2502:2614" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="2658:2669" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="2724:2730" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="2794:2805" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="2843:2849" ph=" }" />
+                <marker date="1544585332875" expanded="true" signature="2898:3014" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="3052:3424" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="3491:3502" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="3544:3550" ph=" }" />
+                <marker date="1544585332875" expanded="true" signature="3598:3704" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="3790:4080" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="4152:4163" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="4204:4210" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="4261:4272" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="4301:4307" ph=" }" />
+                <marker date="1544585332875" expanded="true" signature="4397:4676" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="4739:4750" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="4791:4797" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="4838:4849" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="4878:4884" ph=" }" />
+                <marker date="1544585332875" expanded="true" signature="4962:5033" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="5081:5092" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="5128:5134" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="5191:5202" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="5237:5243" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="5281:5292" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="5318:5324" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="5380:5391" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="5428:5434" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="5471:5482" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="5509:5515" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="5569:5580" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="5615:5621" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="5657:5668" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="5694:5700" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="5767:5778" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="5823:5829" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="5872:5883" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="5914:5920" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="5987:5998" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="6045:6051" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="6102:6113" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="6146:6152" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="6186:6197" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="6222:6228" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="6271:6282" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="6307:6313" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="6343:6354" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="6375:6381" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="6429:6440" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="6469:6475" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="6508:6519" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="6542:6548" ph=" }" />
+                <marker date="1544585332875" expanded="true" signature="6622:6673" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="6772:7957" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="8032:8260" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="8372:8952" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="8470:8564" ph="doInJms(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="8922:8937" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="9063:9752" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="9161:9255" ph="doInJms(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="9722:9737" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="9826:10114" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="10225:10499" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="10248:10352" ph="doInJms(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="10469:10484" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="10609:10992" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="10632:10736" ph="doInJms(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="10962:10977" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="11113:11776" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="11867:12394" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="12463:12757" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="12857:13123" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="12890:12992" ph="createMessage(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="13100:13115" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="13222:13492" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="13259:13361" ph="createMessage(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="13469:13484" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="13597:13921" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="14063:14398" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="14096:14198" ph="createMessage(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="14375:14390" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="14539:14878" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="14576:14678" ph="createMessage(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="14855:14870" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="14929:15142" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="15216:15300" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="15373:15456" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="15537:15800" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="15918:16191" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="15957:16063" ph="doInJms(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="16162:16177" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="16308:16690" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="16347:16453" ph="doInJms(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="16661:16676" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="16810:16917" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="17014:17938" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="18030:18221" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="18281:18346" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="18429:18505" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="18587:18667" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="18757:18845" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="18960:19061" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="19175:19280" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="19341:19645" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="19718:19915" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="20001:20080" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="20171:20255" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="20360:20607" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="20743:21323" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="20841:20935" ph="doInJms(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="21294:21309" ph="}" />
+                <marker date="1544585332875" expanded="true" signature="21464:22174" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="21562:21656" ph="doInJms(session) → {" />
+                <marker date="1544585332875" expanded="false" signature="22145:22160" ph="}" />
+                <marker date="1544585332875" expanded="false" signature="22240:22251" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="22281:22287" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="22347:22358" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="22385:22391" ph=" }" />
+                <marker date="1544585332875" expanded="true" signature="22459:22597" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="22706:23034" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="23145:23204" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="23337:23516" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="23633:23702" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="23715:23855" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="23929:24666" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="23976:23987" ph="{}" />
+                <marker date="1544585332875" expanded="false" signature="24054:24069" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="24115:24125" ph=" }" />
+                <marker date="1544585332875" expanded="false" signature="24186:24201" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="24244:24254" ph=" }" />
+                <marker date="1544585332875" expanded="true" signature="24321:24388" ph="{...}" />
+                <marker date="1544585332875" expanded="true" signature="24463:24530" ph="{...}" />
+                <marker date="1544585332875" expanded="false" signature="24589:24604" ph=" { " />
+                <marker date="1544585332875" expanded="false" signature="24650:24660" ph=" }" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,38 +273,8 @@
       <file leaf-file-name="BaseTestAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/BaseTestAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consumer.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/consumer.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="job.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/job.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvc-servlet.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mvc-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="72" lean-forward="false" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+            <state relative-caret-position="33">
+              <caret line="117" column="65" lean-forward="false" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -136,9 +283,46 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-707">
-              <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+            <state relative-caret-position="216">
+              <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+              <folding>
+                <element signature="e#1774#1788#0" expanded="true" />
+                <element signature="e#1827#1838#0" expanded="true" />
+                <element signature="e#1882#1898#0" expanded="true" />
+                <element signature="e#1942#1958#0" expanded="true" />
+                <element signature="e#2098#2112#0" expanded="true" />
+                <element signature="e#2151#2168#0" expanded="true" />
+                <element signature="e#2212#2228#0" expanded="true" />
+                <element signature="e#2272#2288#0" expanded="true" />
+                <element signature="e#3870#3895#0" expanded="true" />
+                <element signature="e#3937#3960#0" expanded="true" />
+                <element signature="e#4002#4025#0" expanded="true" />
+                <element signature="e#4073#4096#0" expanded="true" />
+                <element signature="e#4325#4345#0" expanded="true" />
+                <element signature="e#4391#4411#0" expanded="true" />
+                <element signature="e#4461#4485#0" expanded="true" />
+                <element signature="e#4534#4557#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,6 +356,9 @@
       <find>webapp.root</find>
       <find>jedisPool</find>
       <find>servl</find>
+      <find>queueDestination</find>
+      <find>jdbc</find>
+      <find>mysql</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,11 +372,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/classes/loggings.properties" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/loggings.properties" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/jdbc.properties" />
-        <option value="$PROJECT_DIR$/web/src/test/resources/mvc-servlet.xml" />
-        <option value="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/ProductBiz.java" />
         <option value="$PROJECT_DIR$/common/src/test/java/com/yangle/service/demotest/proxy/Action.java" />
         <option value="$PROJECT_DIR$/common/src/test/java/com/yangle/service/demotest/proxy/DynamicProxyTest.java" />
         <option value="$PROJECT_DIR$/common/src/test/java/com/yangle/service/demotest/proxy/RealObject.java" />
@@ -209,8 +391,6 @@
         <option value="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/impl/ProductBizImpl.java" />
         <option value="$PROJECT_DIR$/web/src/test/resources/testconfig/jdbc.properties" />
         <option value="$PROJECT_DIR$/web/src/main/resources/logging.properties" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/web/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/web/src/main/resources/redis.properties" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/yangle/service/common/utils/JedisUtil.java" />
@@ -229,13 +409,20 @@
         <option value="$PROJECT_DIR$/api/src/main/java/com/yangle/service/api/TestApi.java" />
         <option value="$PROJECT_DIR$/api-impl/pom.xml" />
         <option value="$PROJECT_DIR$/api-impl/src/main/java/com/yangle/service/aip/impl/TestApiImpl.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/provider.xml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/consumer.xml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/impl/RedisServiceImpl.java" />
+        <option value="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/testbiz/ProductBiz.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/activemq/ProducerService.java" />
+        <option value="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/activemq/impl/ProducerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mq-producer.xml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/BaseTestAction.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/log4j.properties" />
       </list>
     </option>
   </component>
@@ -287,10 +474,10 @@
     <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=$M2_HOME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-364" />
-    <option name="y" value="-1055" />
-    <option name="width" value="1791" />
-    <option name="height" value="993" />
+    <option name="x" value="132" />
+    <option name="y" value="-934" />
+    <option name="width" value="1298" />
+    <option name="height" value="705" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -744,9 +931,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -756,19 +944,305 @@
             </path>
             <path>
               <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="activemq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="testbiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product_factory" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.activemq:activemq-core:5.7.0" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.activemq:activemq-core:5.7.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="activemq-core-5.7.0.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.activemq:activemq-core:5.7.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="activemq-core-5.7.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="activemq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.activemq:activemq-core:5.7.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="activemq-core-5.7.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="activemq" type="462c0819:PsiDirectoryNode" />
+              <item name="command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-beans:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-beans-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-context:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-context-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-jms:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-jms:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-jms-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-jms:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-jms-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="product_factory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-jms:4.0.6.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-jms-4.0.6.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -777,12 +1251,12 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/web/src/test/resources/jdbc.properties" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/web/src/test/resources/testconfig" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/src/main/resources" />
-      <recent name="$PROJECT_DIR$/web/src/test/resources" />
-      <recent name="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/classes" />
+      <recent name="$PROJECT_DIR$/web/src/test/resources/testconfig" />
+      <recent name="$PROJECT_DIR$/web/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/dao/src/main/java/com/yangle/service/dao/mapper" />
+      <recent name="$PROJECT_DIR$/dao/src/main/resources/sqlmap" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.yangle.service.common.datasource" />
@@ -790,12 +1264,12 @@
       <recent name="com.yangle.service.biz" />
       <recent name="com.yangle.service.common.template" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/web/src/test/resources/testconfig" />
       <recent name="$PROJECT_DIR$/web/src/main/resources" />
-      <recent name="$PROJECT_DIR$/web/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/dao/src/main/java/com/yangle/service/dao/mapper" />
-      <recent name="$PROJECT_DIR$/dao/src/main/resources/sqlmap" />
+      <recent name="$PROJECT_DIR$/web/src/test/resources" />
+      <recent name="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1214,7 +1688,8 @@
       <workItem from="1543996552432" duration="5430000" />
       <workItem from="1544003459099" duration="5900000" />
       <workItem from="1544063593928" duration="17387000" />
-      <workItem from="1544414612021" duration="15180000" />
+      <workItem from="1544414612021" duration="19627000" />
+      <workItem from="1544584243918" duration="17990000" />
     </task>
     <task id="LOCAL-00001" summary="git">
       <created>1537240759328</created>
@@ -1433,7 +1908,28 @@
       <option name="project" value="LOCAL" />
       <updated>1544081436788</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="作为服务消费方">
+      <created>1544501519626</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1544501519626</updated>
+    </task>
+    <task id="LOCAL-00033" summary="作为服务消费方">
+      <created>1544512229818</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1544512229818</updated>
+    </task>
+    <task id="LOCAL-00034" summary="日志文件调整">
+      <created>1544520266947</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1544520266947</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1469,15 +1965,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122552000" />
+    <option name="totallyTimeSpent" value="144989000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-364" y="-1055" width="1791" height="993" extended-state="0" />
+    <frame x="132" y="-934" width="1298" height="705" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739422" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4642653" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46379128" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1486,16 +1982,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51224947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66926503" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66721314" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5885246" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44877505" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12694877" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3133219" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21359223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3057325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1523,7 +2019,9 @@
     <MESSAGE value="注解优先级配置" />
     <MESSAGE value="干掉日志配置文件" />
     <MESSAGE value="日志文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="日志文件" />
+    <MESSAGE value="作为服务消费方" />
+    <MESSAGE value="日志文件调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="日志文件调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1541,8 +2039,8 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/RedisServiceImpl.java</url>
-          <line>51</line>
+          <url>file://$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/impl/RedisServiceImpl.java</url>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -1552,83 +2050,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/log4j-over-slf4j/1.7.13/log4j-over-slf4j-1.7.13-sources.jar!/org/apache/log4j/PatternLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.6.RELEASE/spring-web-4.0.6.RELEASE-sources.jar!/org/springframework/web/util/Log4jWebConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="129" column="72" lean-forward="true" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.6.RELEASE/spring-web-4.0.6.RELEASE-sources.jar!/org/springframework/web/util/Log4jConfigListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="45" column="34" lean-forward="true" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yangle/service/common/datasource/DataSourceAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/util/Pool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/JedisPoolConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/org/apache/commons/pool2/impl/GenericObjectPoolConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="53" lean-forward="false" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/org/apache/commons/pool2/impl/BaseObjectPoolConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="113" column="16" lean-forward="false" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yangle/service/common/utils/JedisUtil.java" />
-    <entry file="file://$PROJECT_DIR$/web/src/test/resources/testconfig/schedule.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yangle/service/common/listeners/ApplicationJesdisListener.java" />
     <entry file="file://$PROJECT_DIR$/schedule/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/RedisService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1644,7 +2070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1662,19 +2087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/RedisServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="29" />
-          <folding>
-            <element signature="e#8048#8049#0" expanded="false" />
-            <element signature="e#8080#8081#0" expanded="false" />
-            <element signature="e#8133#8134#0" expanded="false" />
-            <element signature="e#8175#8176#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1720,7 +2132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1728,7 +2139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1744,7 +2154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1752,7 +2161,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1764,19 +2172,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/schedule.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/com/yangle/service/api/TestApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1820,22 +2219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/redis.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1844,27 +2227,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/test/resources/testconfig/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1872,7 +2238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1884,22 +2249,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/provider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="60" lean-forward="false" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/provider.xml" />
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mvc-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1908,42 +2258,347 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api-impl/src/main/java/com/yangle/service/aip/impl/TestApiImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/RedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="7" lean-forward="false" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-core/5.7.0/activemq-core-5.7.0.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/testbiz/ProductBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/impl/RedisServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.6.RELEASE/spring-context-4.0.6.RELEASE.jar!/org/springframework/context/config/spring-context-4.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="173" column="4" lean-forward="false" selection-start-line="173" selection-start-column="4" selection-end-line="173" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="69" column="34" lean-forward="false" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/dubbo-consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/schedule.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/activemq/activemq-core/5.7.0/activemq-core-5.7.0.jar!/org/apache/activemq/command/ActiveMQQueue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.0.6.RELEASE/spring-beans-4.0.6.RELEASE.jar!/org/springframework/beans/factory/xml/spring-beans-4.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="618" column="12" lean-forward="false" selection-start-line="618" selection-start-column="12" selection-end-line="618" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/activemq/ProducerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/4.0.6.RELEASE/spring-jms-4.0.6.RELEASE.jar!/org/springframework/jms/core/JmsTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="288" column="16" lean-forward="false" selection-start-line="288" selection-start-column="16" selection-end-line="288" selection-end-column="16" />
+          <folding>
+            <marker date="1544585332875" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1544585332875" expanded="false" signature="152:1211" ph="..." />
+            <marker date="1544585332875" expanded="true" signature="1986:2440" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="2502:2614" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="2658:2669" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="2724:2730" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="2794:2805" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="2843:2849" ph=" }" />
+            <marker date="1544585332875" expanded="true" signature="2898:3014" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="3052:3424" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="3491:3502" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="3544:3550" ph=" }" />
+            <marker date="1544585332875" expanded="true" signature="3598:3704" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="3790:4080" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="4152:4163" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="4204:4210" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="4261:4272" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="4301:4307" ph=" }" />
+            <marker date="1544585332875" expanded="true" signature="4397:4676" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="4739:4750" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="4791:4797" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="4838:4849" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="4878:4884" ph=" }" />
+            <marker date="1544585332875" expanded="true" signature="4962:5033" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="5081:5092" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="5128:5134" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="5191:5202" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="5237:5243" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="5281:5292" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="5318:5324" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="5380:5391" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="5428:5434" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="5471:5482" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="5509:5515" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="5569:5580" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="5615:5621" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="5657:5668" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="5694:5700" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="5767:5778" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="5823:5829" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="5872:5883" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="5914:5920" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="5987:5998" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="6045:6051" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="6102:6113" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="6146:6152" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="6186:6197" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="6222:6228" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="6271:6282" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="6307:6313" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="6343:6354" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="6375:6381" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="6429:6440" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="6469:6475" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="6508:6519" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="6542:6548" ph=" }" />
+            <marker date="1544585332875" expanded="true" signature="6622:6673" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="6772:7957" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="8032:8260" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="8372:8952" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="8470:8564" ph="doInJms(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="8922:8937" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="9063:9752" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="9161:9255" ph="doInJms(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="9722:9737" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="9826:10114" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="10225:10499" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="10248:10352" ph="doInJms(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="10469:10484" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="10609:10992" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="10632:10736" ph="doInJms(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="10962:10977" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="11113:11776" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="11867:12394" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="12463:12757" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="12857:13123" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="12890:12992" ph="createMessage(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="13100:13115" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="13222:13492" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="13259:13361" ph="createMessage(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="13469:13484" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="13597:13921" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="14063:14398" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="14096:14198" ph="createMessage(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="14375:14390" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="14539:14878" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="14576:14678" ph="createMessage(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="14855:14870" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="14929:15142" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="15216:15300" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="15373:15456" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="15537:15800" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="15918:16191" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="15957:16063" ph="doInJms(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="16162:16177" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="16308:16690" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="16347:16453" ph="doInJms(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="16661:16676" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="16810:16917" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="17014:17938" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="18030:18221" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="18281:18346" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="18429:18505" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="18587:18667" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="18757:18845" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="18960:19061" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="19175:19280" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="19341:19645" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="19718:19915" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="20001:20080" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="20171:20255" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="20360:20607" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="20743:21323" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="20841:20935" ph="doInJms(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="21294:21309" ph="}" />
+            <marker date="1544585332875" expanded="true" signature="21464:22174" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="21562:21656" ph="doInJms(session) → {" />
+            <marker date="1544585332875" expanded="false" signature="22145:22160" ph="}" />
+            <marker date="1544585332875" expanded="false" signature="22240:22251" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="22281:22287" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="22347:22358" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="22385:22391" ph=" }" />
+            <marker date="1544585332875" expanded="true" signature="22459:22597" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="22706:23034" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="23145:23204" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="23337:23516" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="23633:23702" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="23715:23855" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="23929:24666" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="23976:23987" ph="{}" />
+            <marker date="1544585332875" expanded="false" signature="24054:24069" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="24115:24125" ph=" }" />
+            <marker date="1544585332875" expanded="false" signature="24186:24201" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="24244:24254" ph=" }" />
+            <marker date="1544585332875" expanded="true" signature="24321:24388" ph="{...}" />
+            <marker date="1544585332875" expanded="true" signature="24463:24530" ph="{...}" />
+            <marker date="1544585332875" expanded="false" signature="24589:24604" ph=" { " />
+            <marker date="1544585332875" expanded="false" signature="24650:24660" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jms/4.0.6.RELEASE/spring-jms-4.0.6.RELEASE.jar!/org/springframework/jms/core/MessageCreator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <marker date="1544585332875" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1544585332875" expanded="false" signature="152:227" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/activemq/impl/ProducerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <element signature="e#849#1089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mq-producer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="12" column="66" lean-forward="false" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="450">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="e#1774#1788#0" expanded="true" />
+            <element signature="e#1827#1838#0" expanded="true" />
+            <element signature="e#1882#1898#0" expanded="true" />
+            <element signature="e#1942#1958#0" expanded="true" />
+            <element signature="e#2098#2112#0" expanded="true" />
+            <element signature="e#2151#2168#0" expanded="true" />
+            <element signature="e#2212#2228#0" expanded="true" />
+            <element signature="e#2272#2288#0" expanded="true" />
+            <element signature="e#3870#3895#0" expanded="true" />
+            <element signature="e#3937#3960#0" expanded="true" />
+            <element signature="e#4002#4025#0" expanded="true" />
+            <element signature="e#4073#4096#0" expanded="true" />
+            <element signature="e#4325#4345#0" expanded="true" />
+            <element signature="e#4391#4411#0" expanded="true" />
+            <element signature="e#4461#4485#0" expanded="true" />
+            <element signature="e#4534#4557#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-707">
-          <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/consumer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="216">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/BaseTestAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="33">
+          <caret line="117" column="65" lean-forward="false" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-impl/src/main/java/com/yangle/service/aip/impl/TestApiImpl.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding />
         </state>
       </provider>
