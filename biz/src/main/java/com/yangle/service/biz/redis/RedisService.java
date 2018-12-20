@@ -25,7 +25,7 @@ public interface RedisService {
 
     /**
      *
-     * (存入redis数据)
+     * 存入redis数据 不带失效时间
      * @Title: setV
      * @param @param key
      * @param @param value
@@ -73,18 +73,6 @@ public interface RedisService {
 
     /**
      *
-     * expireKey(限时存入redis服务器)
-     *
-     * @Title: expireKey
-     * @param @param key
-     * @param @param seconds
-     * @return void
-     * @throws
-     */
-    void expireKey(String key, int seconds);
-
-    /**
-     *
      * closeJedis(释放redis资源)
      *
      * @Title: closeJedis
@@ -93,4 +81,21 @@ public interface RedisService {
      * @throws
      */
     void closeJedis(Jedis jedis);
+
+    /**
+     * 获取分布式锁并设置锁的超时时间
+     * @param key 锁
+     * @param requestId value 请求标识
+     * @param expireTime 锁的过期时间
+     * @return
+     */
+    boolean tryLock(String key,String requestId,int expireTime);
+
+    /**
+     * 释放分布式锁
+     * @param key
+     * @param requestId
+     * @return
+     */
+    boolean releaseLock(String key,String requestId);
 }

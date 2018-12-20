@@ -9,6 +9,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 import javax.annotation.Resource;
+import java.util.Collections;
 
 /**
  * programname: product_factory
@@ -24,7 +25,11 @@ public class RedisServiceImpl implements RedisService {
 
     private final static Logger logger = LoggerFactory.getLogger(RedisServiceImpl.class);
 
-    public final static String DATA_REDIS_KEY = "test_";
+    private static final String LOCK_SUCCESS = "OK";
+    /**即当key不存在时，我们进行set操作；若key已经存在，则不做任何操作*/
+    private static final String SET_IF_NOT_EXIST = "NX";
+
+    private static final String SET_WITH_EXPIRE_TIME = "PX";
 
     /**
      * redis过期时间,以秒为单位
@@ -54,8 +59,8 @@ public class RedisServiceImpl implements RedisService {
         try {
             jedis = jedisPool.getResource();
             jedis.select(index);
-            jedis.set(DATA_REDIS_KEY +key, json);
-            jedis.expire(DATA_REDIS_KEY +key, seconds);
+            jedis.set(key, json);
+            jedis.expire(key, seconds);
         } catch (Exception e) {
             logger.error("setV初始化jedis异常：" + e);
             if (jedis != null) {
@@ -82,7 +87,7 @@ public class RedisServiceImpl implements RedisService {
         try {
             jedis = jedisPool.getResource();
             jedis.select(index);
-            jedis.set(DATA_REDIS_KEY +key, json);
+            jedis.set(key, json);
         } catch (Exception e) {
             logger.error("setV初始化jedis异常：" + e);
             if (jedis != null) {
@@ -111,7 +116,7 @@ public class RedisServiceImpl implements RedisService {
         try {
             jedis = jedisPool.getResource();
             jedis.select(index);
-            value = jedis.get(DATA_REDIS_KEY +key);
+            value = jedis.get(key);
         } catch (Exception e) {
             logger.error("getV初始化jedis异常：" + e);
             if (jedis != null) {
@@ -139,7 +144,7 @@ public class RedisServiceImpl implements RedisService {
         try {
             jedis = jedisPool.getResource();
             jedis.select(index);
-            value = jedis.get(DATA_REDIS_KEY +key);
+            value = jedis.get(key);
         } catch (Exception e) {
             logger.error("getVString初始化jedis异常：" + e);
             if (jedis != null) {
@@ -173,7 +178,6 @@ public class RedisServiceImpl implements RedisService {
         } catch (Exception e) {
             logger.error("Push初始化jedis异常：" + e);
             if (jedis != null) {
-                //jedisPool.returnBrokenResource(jedis);
                 jedis.close();
             }
         } finally {
@@ -257,11 +261,10 @@ public class RedisServiceImpl implements RedisService {
         try {
             jedis = jedisPool.getResource();
             jedis.select(15);
-            value = jedis.rpop(DATA_REDIS_KEY +key);
+            value = jedis.rpop(key);
         } catch (Exception e) {
             logger.error("Pop初始化jedis异常：" + e);
             if (jedis != null) {
-                //jedisPool.returnBrokenResource(jedis);
                 jedis.close();
             }
         } finally {
@@ -270,37 +273,11 @@ public class RedisServiceImpl implements RedisService {
         return (V) value;
     }
 
-
-    /**
-     *
-     * expireKey(限时存入redis服务器)
-     *
-     * @Title: expireKey
-     * @param @param key
-     * @param @param seconds
-     * @return void
-     * @throws
-     */
-    public  void expireKey(String key, int seconds) {
-        Jedis jedis = null;
-        try {
-            jedis = jedisPool.getResource();
-            jedis.select(3);
-            jedis.expire(DATA_REDIS_KEY + key, seconds);
-        } catch (Exception e) {
-            logger.error("Pop初始化jedis异常：" + e);
-            if (jedis != null) {
-                jedis.close();
-            }
-        } finally {
-            closeJedis(jedis);
-        }
-
-    }
-
     /**
      *
      * closeJedis(释放redis资源)
+     *
+     * 此处仅仅指将资源归还到jedisPool连接池中，并非关闭jedis连接池
      *
      * @Title: closeJedis
      * @param @param jedis
@@ -317,11 +294,77 @@ public class RedisServiceImpl implements RedisService {
         }
     }
 
-    public JedisPool getJedisPool() {
-        return jedisPool;
+    /**
+     * 分布式锁的获取
+     * @param key 锁
+     * @param requestId value 请求标识
+     * @param expireTime 锁的过期时间
+     * @return
+     */
+    public boolean tryLock(String key, String requestId, int expireTime) {
+
+        Jedis jedis = null;
+        try {
+            jedis = jedisPool.getResource();
+
+            while (true){
+                //核心方法，具有原子性
+                String result = jedis.set(key, requestId, SET_IF_NOT_EXIST, SET_WITH_EXPIRE_TIME, expireTime);
+
+                if (LOCK_SUCCESS.equals(result)){
+                    return true;
+                }
+
+                Thread.sleep(10);
+
+            }
+
+
+        }catch (Exception e){
+            logger.error("获取锁资源异常：" + e);
+            if (jedis!=null){
+                jedis.close();
+            }
+        }finally {
+            closeJedis(jedis);
+        }
+
+        return false;
     }
 
-    public void setJedisPool(JedisPool jedisPool) {
-        this.jedisPool = jedisPool;
+    /**
+     * 分布式锁的释放
+     * @param key
+     * @param requestId
+     * @return
+     */
+    public boolean releaseLock(String key, String requestId) {
+
+        final Long RELEASE_SUCCESS = 1L;
+        Jedis jedis = null;
+        try {
+            jedis = jedisPool.getResource();
+
+            while (true) {
+                //编写lua脚本
+                String script = "if redis.call('get', KEYS[1]) == ARGV[1] then return redis.call('del', KEYS[1]) else return 0 end";
+                //执行脚本  该脚本具有原子性
+                Object result = jedis.eval(script, Collections.singletonList(key), Collections.singletonList(requestId));
+
+                if (RELEASE_SUCCESS.equals(result)) {
+                    return true;
+                }
+            }
+
+        }catch (Exception e){
+            logger.error("释放锁资源异常：" + e);
+            if (jedis!=null){
+                jedis.close();
+            }
+        }finally {
+            closeJedis(jedis);
+        }
+
+        return false;
     }
 }

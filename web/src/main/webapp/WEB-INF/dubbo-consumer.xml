@@ -13,6 +13,6 @@
     <dubbo:registry address="zookeeper://47.110.229.27:2181"/>
 
     <!-- 像dubbbo注册服务-->
-    <dubbo:reference id="firstDemoApi" interface="com.provider.service.api.FirstDemoApi"  />
+    <dubbo:reference id="firstDemoApi" interface="com.provider.service.api.FirstDemoApi"  check="false"/>
 
 </beans>

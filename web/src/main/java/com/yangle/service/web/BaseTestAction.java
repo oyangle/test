@@ -59,7 +59,7 @@ public class BaseTestAction {
     @ResponseBody
     public String sayhello(HttpServletRequest request, HttpServletResponse response, ModelMap modelMap){
         LOGGER.info("===================sayhello");
-        return firstDemoApi.queryOK();
+        return firstDemoApi.queryOK().getDesc();
     }
 
     //操作DB测试
