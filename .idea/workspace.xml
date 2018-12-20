@@ -7,22 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d229bc12-1bc7-40e1-9613-6ef810445c94" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/api-impl/api-impl.iml" afterPath="$PROJECT_DIR$/api-impl/api-impl.iml" />
-      <change beforePath="$PROJECT_DIR$/api/api.iml" afterPath="$PROJECT_DIR$/api/api.iml" />
-      <change beforePath="$PROJECT_DIR$/biz/biz.iml" afterPath="$PROJECT_DIR$/biz/biz.iml" />
-      <change beforePath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/RedisService.java" afterPath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/RedisService.java" />
-      <change beforePath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/impl/RedisServiceImpl.java" afterPath="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/impl/RedisServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
-      <change beforePath="$PROJECT_DIR$/dao/dao.iml" afterPath="$PROJECT_DIR$/dao/dao.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/product_factory.iml" afterPath="$PROJECT_DIR$/product_factory.iml" />
-      <change beforePath="$PROJECT_DIR$/schedule/schedule.iml" afterPath="$PROJECT_DIR$/schedule/schedule.iml" />
-      <change beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/BaseTestAction.java" afterPath="$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/BaseTestAction.java" />
       <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/dubbo-consumer.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/dubbo-consumer.xml" />
-      <change beforePath="$PROJECT_DIR$/web/web.iml" afterPath="$PROJECT_DIR$/web/web.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -108,11 +94,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseTestAction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseTestAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/BaseTestAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+            <state relative-caret-position="498">
+              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mvc-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mvc-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mq-producer.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mq-producer.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -130,21 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redis.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/redis.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dubbo-consumer.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dubbo-consumer.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/dubbo-consumer.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -226,7 +222,6 @@
         <option value="$PROJECT_DIR$/api-impl/src/main/java/com/yangle/service/aip/impl/TestApiImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/provider.xml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/consumer.xml" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mvc-servlet.xml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/testbiz/ProductBiz.java" />
         <option value="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/activemq/ProducerService.java" />
@@ -237,7 +232,6 @@
         <option value="$PROJECT_DIR$/web/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/RedisService.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/Test.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/dubbo-consumer.xml" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/RedisLockTestAction.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/ThreadA.java" />
         <option value="$PROJECT_DIR$/biz/src/main/java/com/yangle/service/biz/redis/impl/RedisServiceImpl.java" />
@@ -247,6 +241,8 @@
         <option value="$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/PostTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/BaseTestAction.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/dubbo-consumer.xml" />
       </list>
     </option>
   </component>
@@ -299,7 +295,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-401" />
-    <option name="y" value="-1035" />
+    <option name="y" value="-1021" />
     <option name="width" value="1920" />
     <option name="height" value="993" />
   </component>
@@ -994,7 +990,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PostTest">
+  <component name="RunManager" selected="Tomcat Server.product">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1381,7 +1377,7 @@
       <workItem from="1544003459099" duration="5900000" />
       <workItem from="1544063593928" duration="17387000" />
       <workItem from="1544414612021" duration="19627000" />
-      <workItem from="1544584243918" duration="46604000" />
+      <workItem from="1544584243918" duration="48623000" />
     </task>
     <task id="LOCAL-00001" summary="git">
       <created>1537240759328</created>
@@ -1649,7 +1645,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544701353151</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="对象序列化测试">
+      <created>1545293112993</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1545293112993</updated>
+    </task>
+    <task id="LOCAL-00040" summary="对象序列化测试">
+      <created>1545295084926</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1545295084926</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1685,10 +1695,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173603000" />
+    <option name="totallyTimeSpent" value="175622000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-401" y="-1035" width="1920" height="993" extended-state="0" />
+    <frame x="-401" y="-1021" width="1920" height="993" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1710,7 +1720,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41648108" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13513513" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13363029" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3312034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1742,7 +1752,8 @@
     <MESSAGE value="作为服务消费方" />
     <MESSAGE value="日志文件调整" />
     <MESSAGE value="消息中间件接入" />
-    <option name="LAST_COMMIT_MESSAGE" value="消息中间件接入" />
+    <MESSAGE value="对象序列化测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="对象序列化测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1871,14 +1882,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/provider.xml" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mvc-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="72" lean-forward="false" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api-impl/src/main/java/com/yangle/service/aip/impl/TestApiImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -2170,14 +2173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mq-producer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/test/resources/testconfig/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2282,14 +2277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/dubbo-consumer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/CurrentKillTickets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -2318,8 +2305,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/yangle/service/web/BaseTestAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+        <state relative-caret-position="498">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mvc-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/mq-producer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="12" column="61" lean-forward="false" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/dubbo-consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
           <folding />
         </state>
       </provider>
