@@ -10,6 +10,7 @@ report/
 .classpath
 target/
 */*.iml
+*.iml
 *.data
 *.log
 bin/
