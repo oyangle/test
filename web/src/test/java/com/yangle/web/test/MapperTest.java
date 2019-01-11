@@ -44,7 +44,7 @@ public class MapperTest extends BaseTest{
 
     @Test
     public void testTx(){
-        productBiz.addNewProduct();
+        productBiz.addNewProductRollBack();
     }
 
 }
